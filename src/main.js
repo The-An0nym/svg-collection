@@ -21,8 +21,7 @@ function createSVG(obj) {
   svg.viewBox = obj.viewbox;
   svg.style = obj.style;
 
-  const path = obj.path;
-  svg.appendChild(path);
+  svg.innerHTML = obj.path;
 
   const copyButton = document.createElement("button");
   // TODO add functionality
