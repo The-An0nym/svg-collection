@@ -15,7 +15,7 @@ loadSVGs = async function () {
 
 function createSVG(obj) {
   const svgContainer = document.createElement("div");
-  svgContainer.class = "svg-container";
+  svgContainer.className = "svg-container";
 
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.viewBox = obj.viewbox;
@@ -23,9 +23,12 @@ function createSVG(obj) {
 
   svg.innerHTML = obj.path;
 
+  svgContainer.appendChild(svg);
+
   const copyButton = document.createElement("button");
+  copyButton.textContent("copy");
   // TODO add functionality
-  svgContainer.class = "copy-button";
+  svgContainer.className = "copy-button";
   svgContainer.appendChild(copyButton);
 
   return svgContainer;
