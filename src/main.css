@@ -1,3 +1,26 @@
 svg {
   width: 20px;
 }
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.svgContainer {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.copy-button {
+  width: 100%;
+  border-radius: 0px;
+  background-color: white;
+}
+
+.copy-button:hover {
+  background-color: #adf;
+}
