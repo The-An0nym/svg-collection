@@ -14,7 +14,7 @@ loadSVGs = async function () {
 };
 
 function createSVG(obj) {
-  const svg = document.createElementNS(svg, "http://www.w3.org/2000/svg");
+  const svg = document.createElementNS("svg", "http://www.w3.org/2000/svg");
   svg.viewBox = obj.viewbox;
   svg.style = obj.style;
 
