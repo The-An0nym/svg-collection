@@ -9,6 +9,8 @@
   flex-direction: column;
   justify-content: center;
   margin: 12px 6px;
+  width: 100px;
+  height: 100px;
 }
 
 .svg-container {
@@ -17,29 +19,110 @@
   border-radius: 2px;
 }
 
-.copy-button {
+.button-container {
+  display: none; /* Swithes to flex */
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  padding: 4px;
+  margin: 1px; /* Takes item border into account */
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item:hover > [class^="button-container"] {
+  display: flex;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.button {
+  font-size: 1.1em;
   width: 100%;
   border: 1px solid black;
   border-radius: 2px;
   margin-top: 5px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
-.copy-button:hover {
+.button:hover {
   cursor: pointer;
 }
 
-.copy-png {
-  background-color: hsl(0 100 80);
-}
-
-.copy-png:hover {
-  background-color: hsl(0 150 80);
-}
-
-.copy-html {
+.download-svg {
   background-color: hsl(210 100 80);
 }
 
-.copy-html:hover {
+.download-svg:hover {
   background-color: hsl(220 100 80);
+}
+
+.copy-png {
+  background-color: hsl(130 100 80);
+}
+
+.copy-png:hover {
+  background-color: hsl(130 150 75);
+}
+
+.copy-html {
+  background-color: hsl(0 100 80);
+}
+
+.copy-html:hover {
+  background-color: hsl(0 150 80);
+}
+
+/* POP UP */
+#pop-up-container {
+  position: absolute;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+@keyframes pop-up-animation {
+  0% {
+    transform: translateX(calc(100% + 10px));
+  }
+  10% {
+    transform: translateX(0);
+  }
+  85% {
+    transform: translateX(0);
+  }
+  95% {
+    transform: translateX(calc(100% + 10px));
+    margin-bottom: 5px;
+  }
+  100% {
+    transform: translateX(calc(100% + 10px));
+    margin-bottom: -40px;
+  }
+}
+
+.pop-up {
+  text-align: center;
+  padding: 5px;
+  margin: 5px 0px;
+  border-radius: 5px;
+  width: 140px;
+  border: 1px solid black;
+  position: relative;
+  font-size: 1.1em;
+  animation: pop-up-animation;
+  animation-duration: 5s;
+}
+
+.pop-up.fail {
+  background-color: #faa;
+}
+
+.pop-up.pass {
+  background-color: #afa;
 }

@@ -16,5 +16,11 @@
     "viewbox": "0 0 200 200",
     "path": "<path d=\"M25 65 L10 30 A16 16 0 0 1 30 10 L180 90 A20 14 0 01 180 110 L30 190 A16 16 0 0 1 10 170 L25 135 A26 35 0 0 1 45 115 L80 105 A10 6 0 0 0 80 95 L45 85 A26 35 0 0 1 25 65 Z\" />",
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;"
+  },
+  {
+    "name": "Bin Icon",
+    "viewbox": "0 0 200 200",
+    "path": "<path d=\"M100 190 L65 190 A20 26 0 0 1 45 170 L30 60 A10 20 0 0 0 20 45\" /><path transform=\"translate(200), scale(-1 1)\" d=\"M100 190 L65 190 A20 26 0 0 1 45 170 L30 60 A10 20 0 0 0 20 45\" /><path d=\"M20 45 L180 45\" /><path d=\"M70 30 A20 20 0 0 1 90 10 L110 10 A20 20 0 0 1 130 30\" /><path d=\"M65 70 L75 160 M100 70 L100 160 M135 70 L125 160\" />",
+    "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;"
   }
 ]
