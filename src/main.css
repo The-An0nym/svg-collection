@@ -1,3 +1,7 @@
+:root {
+  --font-size: 16px;
+}
+
 #container {
   display: flex;
   flex-direction: row;
@@ -35,7 +39,7 @@
 }
 
 .button {
-  font-size: 1.1em;
+  font-size: var(--font-size);
   width: 100%;
   border: 1px solid black;
   border-radius: 2px;
@@ -112,7 +116,7 @@
   width: 140px;
   border: 1px solid black;
   position: relative;
-  font-size: 1.1em;
+  font-size: var(--font-size);
   animation: pop-up-animation;
   animation-duration: 5s;
 }
