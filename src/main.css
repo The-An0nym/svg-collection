@@ -15,12 +15,12 @@
   margin: 12px 6px;
   width: 100px;
   height: 100px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .svg-container {
   padding: 5px;
-  border: 1px solid black;
-  border-radius: 2px;
 }
 
 .button-container {
@@ -32,6 +32,10 @@
   margin: 1px; /* Takes item border into account */
   flex-direction: column;
   justify-content: center;
+}
+
+.show {
+  box-shadow: #000 -1px 1px 3px -1px;
 }
 
 .show > .button-container {
@@ -53,30 +57,31 @@
 
 .button:hover {
   cursor: pointer;
+  box-shadow: #000 0px 2px 4px -2px;
 }
 
 .download-svg {
-  background-color: hsl(210 100 80);
+  background-color: hsl(210 100 70);
 }
 
 .download-svg:hover {
-  background-color: hsl(220 100 80);
+  background-color: hsl(210 150 80);
 }
 
 .copy-png {
-  background-color: hsl(130 100 80);
+  background-color: hsl(120 150 70);
 }
 
 .copy-png:hover {
-  background-color: hsl(130 150 75);
+  background-color: hsl(120 150 80);
 }
 
 .copy-html {
-  background-color: hsl(0 100 80);
+  background-color: hsl(10 100 70);
 }
 
 .copy-html:hover {
-  background-color: hsl(0 150 80);
+  background-color: hsl(10 150 80);
 }
 
 /* POP UP */
