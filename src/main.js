@@ -2,9 +2,14 @@ const container = document.getElementById("container");
 const popUpContainer = document.getElementById("pop-up-container");
 
 /**
+ * Whether copy buttons should be blocked or not.
+ */
+let blockClick = false;
+
+/**
  * Loads all SVGs from data.json
  */
-loadSVGs = async function () {
+async function loadSVGs() {
   const data = await fetch("data.json");
   const json = await data.json();
 
@@ -12,7 +17,29 @@ loadSVGs = async function () {
     const svg = createSVG(json[i]);
     container.appendChild(svg);
   }
-};
+
+  document.addEventListener("mousemove", mouseMoveHandler);
+}
+
+/**
+ * Hides or unhides button container depending on which item is hovered on
+ * and sets blockClick (important for touch screen devices)
+ * @param {Event} e event
+ */
+function mouseMoveHandler(e) {
+  const itemEles = document.getElementsByClassName("item");
+
+  for (let i = 0; i < itemEles.length; i++) {
+    if (itemEles[i].contains(e.target)) itemEles[i].className = "item show";
+    else itemEles[i].className = "item";
+  }
+
+  // For touch screen (mouseMove is triggered on tap)
+  const svgConts = document.getElementsByClassName("svg-container");
+  blockClick = false;
+  for (let i = 0; i < svgConts.length; i++)
+    if (svgConts[i].contains(e.target)) blockClick = true;
+}
 
 /**
  * Creates SVG item object
@@ -41,19 +68,19 @@ function createSVG(obj) {
 
   const downloadSVGButton = document.createElement("button");
   downloadSVGButton.textContent = "save svg";
-  downloadSVGButton.addEventListener("mousedown", downloadSVG);
+  downloadSVGButton.addEventListener("mouseup", downloadSVG);
   downloadSVGButton.className = "button download-svg";
   buttonContainer.appendChild(downloadSVGButton);
 
   const copyPNGButton = document.createElement("button");
   copyPNGButton.textContent = "copy png";
-  copyPNGButton.addEventListener("mousedown", copyPNG);
+  copyPNGButton.addEventListener("mouseup", copyPNG);
   copyPNGButton.className = "button copy-png";
   buttonContainer.appendChild(copyPNGButton);
 
   const copyHTMLButton = document.createElement("button");
   copyHTMLButton.textContent = "copy html";
-  copyHTMLButton.addEventListener("mousedown", copyHTML);
+  copyHTMLButton.addEventListener("mouseup", copyHTML);
   copyHTMLButton.className = "button copy-html";
   buttonContainer.appendChild(copyHTMLButton);
 
@@ -76,6 +103,7 @@ function getSVGElement(e) {
  * @param {Event} e
  */
 async function downloadSVG(e) {
+  if (blockClick) return;
   const svg = getSVGElement(e);
 
   const serializer = new XMLSerializer();
@@ -104,6 +132,8 @@ async function downloadSVG(e) {
  * @param {Event} e
  */
 async function copyPNG(e) {
+  if (blockClick) return;
+
   const svg = getSVGElement(e);
 
   const serializer = new XMLSerializer();
@@ -141,6 +171,8 @@ async function copyPNG(e) {
  * @param {Event} e
  */
 function copyHTML(e) {
+  if (blockClick) return;
+
   const svg = getSVGElement(e);
   const clipboard = navigator.clipboard;
   if (clipboard == undefined) {
