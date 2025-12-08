@@ -174,11 +174,16 @@ function copyHTML(e) {
   if (blockClick) return;
 
   const svg = getSVGElement(e);
+  // Cleanup
+  const htmlText = svg.outerHTML
+    .replaceAll("></path>", " />")
+    .replaceAll("><", ">\n<")
+    .replaceAll("<path", "\t<path");
   const clipboard = navigator.clipboard;
   if (clipboard == undefined) {
     copyFail();
   } else {
-    clipboard.writeText(svg.outerHTML).then(copyPass, copyFail);
+    clipboard.writeText(htmlText).then(copyPass, copyFail);
   }
 }
 

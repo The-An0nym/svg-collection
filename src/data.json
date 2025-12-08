@@ -12,6 +12,12 @@
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;"
   },
   {
+    "name": "Logout Icon",
+    "viewbox": "0 0 200 200",
+    "path": "<path d=\"M120 50 L120 30 A20 20 0 0 0 100 10 L30 10 A20 20 0 0 0 10 30 L10 170 A20 20 0 0 0 30 190 L100 190 A20 20 0 0 0 120 170 L120 150\" /><path transform=\"scale(-1, 1), translate(-230, 0)\" d=\"M50 100 L150 100 M150 60 L185 95 A12 10 0 0 1 185 105 L150 140\" />",
+    "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;"
+  },
+  {
     "name": "Send Icon",
     "viewbox": "0 0 200 200",
     "path": "<path d=\"M25 65 L10 30 A16 16 0 0 1 30 10 L180 90 A20 14 0 01 180 110 L30 190 A16 16 0 0 1 10 170 L25 135 A26 35 0 0 1 45 115 L80 105 A10 6 0 0 0 80 95 L45 85 A26 35 0 0 1 25 65 Z\" />",
