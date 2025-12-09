@@ -175,16 +175,28 @@ function copyHTML(e) {
 
   const svg = getSVGElement(e);
   // Cleanup
-  const htmlText = svg.outerHTML
-    .replaceAll("></path>", " />")
-    .replaceAll("><", ">\n<")
-    .replaceAll("<path", "\t<path");
+  const htmlText = cleanHTML(svg.outerHTML);
   const clipboard = navigator.clipboard;
   if (clipboard == undefined) {
     copyFail();
   } else {
     clipboard.writeText(htmlText).then(copyPass, copyFail);
   }
+}
+
+/**
+ * Cleans up HTML string
+ * @returns {string} returns HTML as string
+ */
+function cleanHTML(string) {
+  // Replaces all end tags (except svg) with />
+  string = string.replaceAll(/><\/((?!svg)[A-z])+>/g, " />");
+  // Add new line (except first line which is <svg)
+  string = string.replaceAll(/<(?!svg)/g, "\n<");
+  // Add indent (except for lines with <svg or </svg)
+  string = string.replaceAll(/<(?!svg|\/svg)/g, "\t<");
+
+  return string;
 }
 
 function copyFail() {
