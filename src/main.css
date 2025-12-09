@@ -124,6 +124,11 @@
   font-size: var(--font-size);
   animation: pop-up-animation;
   animation-duration: 5s;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
 }
 
 .pop-up.fail {
