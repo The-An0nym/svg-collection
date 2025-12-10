@@ -4,11 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="menu.css" />
     <title>SVGs</title>
   </head>
   <body>
+    <nav>
+      <span class="option">
+        <label for="default-style">Default style</label>
+        <input id="default-style" type="checkbox" checked="true" />
+      </span>
+      <!-- The following are hidden by JavaScript -->
+      <span class="option menu">
+        <label for="stroke-width">Stroke width</label>
+        <input id="stroke-width" type="range" min="0" max="25" value="10" />
+        <span id="stroke-width-value">10px</span>
+      </span>
+      <span class="option menu">
+        <label for="stroke-color">
+          Stroke color
+          <span id="stroke-color-display" class="color-display"></span>
+        </label>
+        <input id="stroke-color" type="color" />
+      </span>
+      <span class="option menu">
+        <label for="fill">Fill </label>
+        <input id="fill" type="checkbox" />
+      </span>
+      <!-- Hidden unless fill is checked -->
+      <span class="option menu" id="fill-color-container">
+        <label for="fill-color">
+          Fill color
+          <span id="fill-color-display" class="color-display"></span>
+        </label>
+        <input id="fill-color" type="color" value="#ffffff" />
+      </span>
+    </nav>
     <div id="pop-up-container"></div>
     <div id="container"></div>
     <script src="main.js"></script>
+    <script src="styling.js"></script>
   </body>
 </html>

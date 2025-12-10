@@ -56,7 +56,7 @@ function createSVG(obj) {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("viewBox", obj.viewbox);
   svg.style = obj.style;
-  svg.name = obj.name;
+  svg.svgObj = obj;
 
   svg.innerHTML = obj.path;
 
@@ -118,7 +118,7 @@ async function downloadSVG(e) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = svg.name;
+  a.download = svg.svgObj.name;
 
   document.body.appendChild(a);
   a.click();
