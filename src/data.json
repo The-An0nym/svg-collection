@@ -86,9 +86,9 @@
   {
     "name": "Phone Icon",
     "viewbox": "-100 -100 200 200",
-    "path": "<path d=\"M0 90 L-30 90 A20 20 0 0 1 -50 70 L-50 -70 A20 20 0 0 1 -30 -90 L0 -90\" /><path transform=\"scale(-1)\" d=\"M0 90 L-30 90 A20 20 0 0 1 -50 70 L-50 -70 A20 20 0 0 1 -30 -90 L0 -90\" /><path d=\"M-30 -90 A15 15 0 0 0 -15 -75 L15 -75 A15 15 0 0 0 30 -90 M-8 75 L8 75\">",
+    "path": "<path d=\"M0 90 L-30 90 A20 20 0 0 1 -50 70 L-50 -70 A20 20 0 0 1 -30 -90 L0 -90\" /><path transform=\"scale(-1)\" d=\"M0 90 L-30 90 A20 20 0 0 1 -50 70 L-50 -70 A20 20 0 0 1 -30 -90 L0 -90\" /><path d=\"M-30 -90 A15 15 0 0 0 -15 -75 L15 -75 A15 15 0 0 0 30 -90 M-30 -90 L30 -90 M-8 75 L8 75\">",
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
-    "fillable": false
+    "fillable": true
   },
   {
     "name": "Computer Icon",
@@ -100,16 +100,16 @@
   {
     "name": "Bell Icon",
     "viewbox": "-100 -100 200 200",
-    "path": "<path d=\"M0 -70 A50 50 0 0 0 -50 -20 L-50 20 A100 70 0 0 1 -70 60 M0 -70 A50 50 0 0 1 50 -20 L50 20 A100 70 0 0 0 70 60 M-70 60 L70 60 M-20 60 A10 10 0 0 0 20 60 M0 -70 L0 -80\" />",
+    "path": "<path d=\"M0 -70 A50 50 0 0 0 -50 -20 L-50 20 A100 60 0 0 1 -65 50 A50 10 -20 0 0 -70 60 L0 60 M0 -70 A50 50 0 0 1 50 -20 L50 20 A100 60 0 0 0 65 50 A50 10 20 0 1 70 60 L0 60 M-20 60 A10 10 0 0 0 20 60 M0 -70 L0 -80\" />",
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
-    "fillable": false
+    "fillable": true
   },
   {
     "name": "Silenced Bell Icon",
     "viewbox": "-100 -100 200 200",
-    "path": "<defs><clipPath id=\"bell-cut-line\"><path d=\"M74 -86 L-86 74 L-86 -86 Z M86 -74 L-74 86 L86 86 Z\" /></clipPath></defs><path clip-path=\"url(#bell-cut-line)\" d=\"M0 -70 A50 50 0 0 0 -50 -20 L-50 20 A100 70 0 0 1 -70 60 M0 -70 A50 50 0 0 1 50 -20 L50 20 A100 70 0 0 0 70 60 M-70 60 L70 60 M-20 60 A10 10 0 0 0 20 60 M0 -70 L0 -80\" /><path d=\"M75 -75 L-75 75\" />",
+    "path": "<defs><clipPath id=\"bell-cut-line\"><path d=\"M74 -86 L-86 74 L-86 -86 Z M86 -74 L-74 86 L86 86 Z\" /></clipPath></defs><path clip-path=\"url(#bell-cut-line)\" d=\"M0 -70 A50 50 0 0 0 -50 -20 L-50 20 A100 60 0 0 1 -65 50 A50 10 -20 0 0 -70 60 L0 60 M0 -70 A50 50 0 0 1 50 -20 L50 20 A100 60 0 0 0 65 50 A50 10 20 0 1 70 60 L0 60 M-20 60 A10 10 0 0 0 20 60 M0 -70 L0 -80\" /><path d=\"M75 -75 L-75 75\" />",
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
-    "fillable": false
+    "fillable": true
   },
   {
     "name": "Thumbtack Icon",
