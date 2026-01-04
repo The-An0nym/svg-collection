@@ -117,5 +117,19 @@
     "path": "<path d=\"M0 35 L50 35 A5 5 0 0 0 55 30 A15 20 0 0 0 40 10 A5 5 0 0 1 35 5 L25 -65 A5 5 0 0 1 30 -70 A15 15 0 0 0 40 -85 A5 5 0 0 0 35 -90 L0 -90\" /><path d=\"M0 35 L50 35 A5 5 0 0 0 55 30 A15 20 0 0 0 40 10 A5 5 0 0 1 35 5 L25 -65 A5 5 0 0 1 30 -70 A15 15 0 0 0 40 -85 A5 5 0 0 0 35 -90 L0 -90\" transform=\"scale(-1, 1)\" /><path d=\"M0 35 L0 90\" />",
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
     "fillable": true
+  },
+  {
+    "name": "Order Ascending Icon",
+    "viewbox": "-100 -100 200 200",
+    "path": "<path d=\"M-70 -90 L-70 90 M-90 60 L-70 90 M-50 60 L-70 90\" /><path d=\"M-30 -90 L70 -90 A10 10 0 0 1 70 -70 L-30 -70 A10 10 0 0 1 -30 -90\" /><path d=\"M-30 -50 L50 -50 A10 10 0 0 1 50 -30 L-30 -30 A10 10 0 0 1 -30 -50\" /><path d=\"M-30 -10 L30 -10 A10 10 0 0 1 30 10 L-30 10 A10 10 0 0 1 -30 -10\" /><path d=\"M-30 30 L10 30 A10 10 0 0 1 10 50 L-30 50 A10 10 0 0 1 -30 30\" /><path d=\"M-30 70 L-10 70 A10 10 0 0 1 -10 90 L-30 90 A10 10 0 0 1 -30 70\" />",
+    "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
+    "fillable": true
+  },
+  {
+    "name": "Order Descending Icon",
+    "viewbox": "-100 -100 200 200",
+    "path": "<path d=\"M-70 -90 L-70 90 M-90 -60 L-70 -90 M-50 -60 L-70 -90\" /><path d=\"M-30 -90 L70 -90 A10 10 0 0 1 70 -70 L-30 -70 A10 10 0 0 1 -30 -90\" /><path d=\"M-30 -50 L50 -50 A10 10 0 0 1 50 -30 L-30 -30 A10 10 0 0 1 -30 -50\" /><path d=\"M-30 -10 L30 -10 A10 10 0 0 1 30 10 L-30 10 A10 10 0 0 1 -30 -10\" /><path d=\"M-30 30 L10 30 A10 10 0 0 1 10 50 L-30 50 A10 10 0 0 1 -30 30\" /><path d=\"M-30 70 L-10 70 A10 10 0 0 1 -10 90 L-30 90 A10 10 0 0 1 -30 70\" />",
+    "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
+    "fillable": true
   }
 ]
