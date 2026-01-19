@@ -131,5 +131,12 @@
     "path": "<path d=\"M-70 -90 L-70 90 M-90 -60 L-70 -90 M-50 -60 L-70 -90\" /><path d=\"M-30 -90 L70 -90 A10 10 0 0 1 70 -70 L-30 -70 A10 10 0 0 1 -30 -90\" /><path d=\"M-30 -50 L50 -50 A10 10 0 0 1 50 -30 L-30 -30 A10 10 0 0 1 -30 -50\" /><path d=\"M-30 -10 L30 -10 A10 10 0 0 1 30 10 L-30 10 A10 10 0 0 1 -30 -10\" /><path d=\"M-30 30 L10 30 A10 10 0 0 1 10 50 L-30 50 A10 10 0 0 1 -30 30\" /><path d=\"M-30 70 L-10 70 A10 10 0 0 1 -10 90 L-30 90 A10 10 0 0 1 -30 70\" />",
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
     "fillable": true
+  },
+  {
+    "name": "Undo Icon",
+    "viewbox": "-100 -100 200 200",
+    "path": "<path d=\"M-20 80 L10 80 A50 50 0 0 0 10 -50 L-80 -50 M-80 -50 L-50 -80 M-80 -50 L-50 -20\" />",
+    "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
+    "fillable": false
   }
 ]
