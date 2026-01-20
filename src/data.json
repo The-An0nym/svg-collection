@@ -138,5 +138,12 @@
     "path": "<path d=\"M-20 80 L10 80 A50 50 0 0 0 10 -50 L-80 -50 M-80 -50 L-50 -80 M-80 -50 L-50 -20\" />",
     "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
     "fillable": false
+  },
+  {
+    "name": "Note List Icon",
+    "viewbox": "-100 -100 200 200",
+    "path": "<path d=\"M-70 90 L70 90 A20 20 0 0 0 90 70 L90 -70 A20 20 0 0 0 70 -90 L-70 -90 A20 20 0 0 0 -90 -70 L-90 70 A20 20 0 0 0 -70 90\" /><path d=\"M90 -50 L-90 -50 M70 -10 L-70 -10 M70 20 L-70 20 M-70 50 L70 50\">",
+    "style": "stroke: black; stroke-width: 10px; fill:none; stroke-linecap: round;",
+    "fillable": true
   }
 ]
